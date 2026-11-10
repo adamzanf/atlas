@@ -1,6 +1,94 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Atlas Quiz – Asia, Africa &amp; Europe</title>
 <head>
   <meta name="description" content="Free Map Quizzing, Studying, and Learning for AP Human Geography Students: Covers the scope of Europe, Asia, & Africa, Continents and & Countries." />
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["WebApplication", "Quiz"],
+      "@id": "https://atlas.zhangadam449.workers.dev",
+      "name": "ATLAS",
+      "headline": "ATLAS: Interactive AP Human Geography Map Quiz",
+      "description": "An interactive AP Human Geography map quiz application for students covering Europe, Asia, and Africa. Features include dynamic country and capital toggles, regional scoping, typing/clicking modes, scoring, and performance timers.",
+      "url": "https://atlas.zhangadam449.workers.dev",
+      "applicationCategory": "EducationalApplication",
+      "applicationSubCategory": "Geography Quiz",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5 Canvas or SVG support.",
+      "interactivityType": "active",
+      "learningResourceType": "Quiz",
+      "educationalLevel": "Advanced Placement",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Regional coverage: Europe, Asia, Africa",
+        "Sub-regional scoping (e.g., South Asia, East Asia)",
+        "Two gameplay modes: Type country name or click geographical location",
+        "Configurable toggles to include or exclude specific countries and capitals",
+        "Real-time score tracking and correct answer percentage calculation",
+        "Built-in stop-clock timer and visual progress bar",
+        "Dark mode interface selector"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://atlas.zhangadam449.workers.dev/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What regions does the ATLAS map quiz cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ATLAS comprehensively covers Europe, Asia, and Africa. It allows AP Human Geography students to narrow their focus into smaller regional scopes, such as South Asia or East Asia, to match curriculum units."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do students test themselves using ATLAS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students can test their knowledge using two primary interactive modes: typing the names of the countries directly or clicking on the correct visual locations on the map."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I customize the quiz to include or exclude specific items?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. ATLAS is fully customizable. Users have the ability to include or exclude specific countries and capitals based on what they are currently studying."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the quiz test country capitals as well as locations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ATLAS includes features to test both country locations and their corresponding capitals, which can be toggled on or off depending on your preference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What metrics are used to track student performance during the quiz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The quiz features live performance tracking tools, including an active score counter, an absolute timer, a visual progress bar, and a live calculation of your correct answer percentage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the ATLAS application support dark mode?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ATLAS includes a built-in dark mode toggle to provide a comfortable, low-light viewing experience for late-night study sessions."
+          }
+        }
+      ]
+    }
+  ]
+}
 </head>
  <link rel="canonical" href="https://atlas.zhangadam449.workers.dev">
 <style>
@@ -155,4 +243,39 @@ const t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/800);el.text
 function land(){clearInterval(tm);["#setup","#quiz","#end","#modal"].forEach(function(s){$(s).hidden=true});$("#land").hidden=false;
 $("#cn").textContent="—";$("#cs").textContent="Counts quiz sessions, not unique users.";api("GET").then(showCount)}
 land();
+<!-- Visible FAQ Section for Users and Search Engines -->
+<section id="faq" style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif;">
+  <h2>Frequently Asked Questions</h2>
+  
+  <div class="faq-item" style="margin-bottom: 20px;">
+    <h3>What regions does the ATLAS map quiz cover?</h3>
+    <p>ATLAS comprehensively covers Europe, Asia, and Africa. It allows AP Human Geography students to narrow their focus into smaller regional scopes, such as South Asia or East Asia, to match curriculum units.</p>
+  </div>
+
+  <div class="faq-item" style="margin-bottom: 20px;">
+    <h3>How do students test themselves using ATLAS?</h3>
+    <p>Students can test their knowledge using two primary interactive modes: typing the names of the countries directly or clicking on the correct visual locations on the map.</p>
+  </div>
+
+  <div class="faq-item" style="margin-bottom: 20px;">
+    <h3>Can I customize the quiz to include or exclude specific items?</h3>
+    <p>Yes. ATLAS is fully customizable. Users have the ability to include or exclude specific countries and capitals based on what they are currently studying.</p>
+  </div>
+
+  <div class="faq-item" style="margin-bottom: 20px;">
+    <h3>Does the quiz test country capitals as well as locations?</h3>
+    <p>Yes, ATLAS includes features to test both country locations and their corresponding capitals, which can be toggled on or off depending on your preference.</p>
+  </div>
+
+  <div class="faq-item" style="margin-bottom: 20px;">
+    <h3>What metrics are used to track student performance during the quiz?</h3>
+    <p>The quiz features live performance tracking tools, including an active score counter, an absolute timer, a visual progress bar, and a live calculation of your correct answer percentage.</p>
+  </div>
+
+  <div class="faq-item" style="margin-bottom: 20px;">
+    <h3>Does the ATLAS application support dark mode?</h3>
+    <p>Yes, ATLAS includes a built-in dark mode toggle to provide a comfortable, low-light viewing experience for late-night study sessions.</p>
+  </div>
+</section>
+
 </script></body></html>
